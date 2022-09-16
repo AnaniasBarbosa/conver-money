@@ -2,8 +2,13 @@
   "name": "convert-my-money",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
   "main": "index.js",
   "scripts": {
+    "start": "node ./app.js",
     "dev": "nodemon app.js",
     "test": "jest"
   },
