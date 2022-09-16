@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include ("../partials/header.ejs") %>
+</head>
+
+<body>
+    <div class="container formulario">
+        <%- include ("../partials/navbar.ejs") %>
+
+        <main class="container">
+            <form action="/cotacao" method="GET" class="form-money">
+                <div class="form-input">
+                    <label for="cotacao" class="form-label">COTAÇÃO DO DOLAR</label>
+                    <input type="number" class="form-control" name="cotacao" placeholder="Cotação do Dolar" required>
+                </div>
+                <div class="form-input">
+                    <label class="form-label" for="cotacao">QUANTIDADE DE DÓLARES</label>
+                    <input type="number" class="form-control " name="quantidade" placeholder="quantidade dólares"
+                        required>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit" id="converter"> CONVERTER </button>
+            </form>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+</body>
+
+</html>

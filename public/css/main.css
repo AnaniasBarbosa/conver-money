@@ -1,0 +1,40 @@
+body {
+    background-color:steelblue;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 30vw;
+    height: 30vw;
+}
+.form-input{
+    margin-bottom: 20px;
+}
+.form-label {
+    font-size: large;
+    font-weight: bolder;
+}
+#converter {
+    font-weight: bolder;
+}
+.formulario{
+    background-color:aliceblue;
+    margin-top:  80px;
+    padding-bottom: 50px;
+
+    height:40vw;
+    width: 30vw;
+
+    border: solid 5px;
+    border-radius: 5%;
+}
+
+.resultado {
+    height: 10vw;
+    width: 20vw;
+}
