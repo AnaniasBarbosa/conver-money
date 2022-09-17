@@ -10,15 +10,18 @@
         <%- include ("../partials/navbar.ejs") %>
 
         <main class="container">
+            <p>A cotação USD já carregada automaticamente, mas caso queira informar outra cotação basta alterar o valor
+            </p>
             <form action="/cotacao" method="GET" class="form-money">
                 <div class="form-input">
                     <label for="cotacao" class="form-label">COTAÇÃO DO DOLAR</label>
-                    <input type="number" class="form-control" name="cotacao" placeholder="Cotação do Dolar" required>
+                    <input value="<%- bid %>" type="text" class="form-control" name="cotacao"
+                        placeholder="Cotação do Dolar" required>
                 </div>
                 <div class="form-input">
                     <label class="form-label" for="cotacao">QUANTIDADE DE DÓLARES</label>
-                    <input type="number" class="form-control " name="quantidade" placeholder="quantidade dólares"
-                        required>
+                    <input type="number" step="any" min="0" class="form-control " name="quantidade"
+                        placeholder="quantidade dólares" required>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit" id="converter"> CONVERTER </button>
             </form>
