@@ -11,10 +11,10 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", async (req, res) => {
-  const { bid } = await cotacao.getCotacao();
+  const moeda = await cotacao.extractValor();
 
   res.render("pages/index", {
-    bid,
+    moeda,
   });
 });
 
