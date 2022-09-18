@@ -11,7 +11,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", async (req, res) => {
-  const moeda = await cotacao.extractValor();
+  const moeda = await cotacao.getCotacao();
 
   res.render("pages/index", {
     moeda,
